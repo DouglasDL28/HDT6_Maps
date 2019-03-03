@@ -193,13 +193,13 @@ public class Main {
                             }
 
                             for(Map.Entry<String, String> e: monstruoType){
-                                System.out.println("Nombre: " + e.getKey() + " Tipo: " + e.getValue());
+                                System.out.println("Nombre: " + e.getKey() + "| Tipo: " + e.getValue());
                             }
                             for(Map.Entry<String, String> e: trampaType){
-                                System.out.println("Nombre: " + e.getKey() + " Tipo: " + e.getValue());
+                                System.out.println("Nombre: " + e.getKey() + "| Tipo: " + e.getValue());
                             }
                             for(Map.Entry<String, String> e: hechiceroType){
-                                System.out.println("Nombre: " + e.getKey() + " Tipo: " + e.getValue());
+                                System.out.println("Nombre: " + e.getKey() + "| Tipo: " + e.getValue());
                             }
                             System.out.println("Cantidad de cartas tipo Monstruo: " + monstruoCont);
                             System.out.println("Cantidad de cartas tipo Trampa: " + trampaContador);
@@ -217,7 +217,7 @@ public class Main {
                                 String value = entry.getValue();
 
                                 //Suma a los contadores dependiendo del tipo de la carta.
-                                System.out.println("Nombre: " + key + " Tipo: " + value);
+                                System.out.println("Nombre: " + key + "| Tipo: " + value);
                                 if(value.equals("Monstruo")){
                                     monstruoCont ++;
                                 } else if (value.equals("Trampa")){
@@ -251,21 +251,22 @@ public class Main {
 
                                 } else if (value.equals("Trampa")){
                                     trampaContador ++;
-                                    hechiceroType.add(entry);
+                                    trampaType.add(entry);
                                 } else {
                                     hechizoContador ++;
                                     hechiceroType.add(entry);
                                 }
                             }
 
+                            //Por cada entry en la lista de tipos Monstruo imprime el nombre y el tipo
                             for(Map.Entry<String, String> e: monstruoType){
-                                System.out.println("Nombre: " + e.getKey() + " Tipo: " + e.getValue());
+                                System.out.println("Nombre: " + e.getKey() + "| Tipo: " + e.getValue());
                             }
                             for(Map.Entry<String, String> e: trampaType){
-                                System.out.println("Nombre: " + e.getKey() + " Tipo: " + e.getValue());
+                                System.out.println("Nombre: " + e.getKey() + "| Tipo: " + e.getValue());
                             }
                             for(Map.Entry<String, String> e: hechiceroType){
-                                System.out.println("Nombre: " + e.getKey() + " Tipo: " + e.getValue());
+                                System.out.println("Nombre: " + e.getKey() + "| Tipo: " + e.getValue());
                             }
                             System.out.println("Cantidad de cartas tipo Monstruo: " + monstruoCont);
                             System.out.println("Cantidad de cartas tipo Trampa: " + trampaContador);
